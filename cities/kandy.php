@@ -35,7 +35,7 @@
                                 <li><a href="sigiriya.php">Sigiriya</a></li>
                             </ul>
                         </div></li>
-                    <li><a href="../contactus.html"><i class="fa fa-phone-square" ></i>CONTACT-US</a></li>
+                    <li><a href="../contact.html"><i class="fa fa-phone-square" ></i>CONTACT-US</a></li>
                 </ul>
             </div>
         </div>
