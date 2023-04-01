@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles/t-homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <script src="togglebtn.js" defer></script>
+        <title>Tourists</title>
+    </head>
+    <body>
+        <div class="header-bar">
+            <div class="about">
+                <img class="logo" src="images/logo.jpg">
+                <p class = "name">T-GUIDE</p>
+            </div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="1stpage.php"><i class="fa fa-home" ></i>HOME</a></li>
+                    <li><a href=""><i class="fa fa-map-marker"></i>LOCATIONS<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <div class="drop-menu">
+                            <ul>
+                                <li><a href="cities/colombo.php">Colombo</a></li>
+                                <li><a href="cities/ella.php">Ella</a></li>
+                                <li><a href="cities/hikkaduwa.php">Hikkaduwa</a></li>
+                                <li><a href="cities/kandy.php">Kandy</a></li>
+                                <li><a href="cities/sigiriya.php">Sigiriya</a></li>
+                            </ul>
+                        </div></li>
+                    <li><a href="contactus.html"><i class="fa fa-phone-square" ></i>CONTACT-US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/colombo.jpg"></div>
+            <div class="swiper-slide"><img src="images/ella.jpg"></div>
+            <div class="swiper-slide"><img src="images/hikkaduwa.jpg"></div>
+            <div class="swiper-slide"><img src="images/kandy.jpg"></div>
+            <div class="swiper-slide"><img src="images/sigiriya.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+            <div class="question-para">
+                <p>Where do you plan to go ?</p>
+            </div> 
+            <div class="button-set">
+                <button class="colombo-btn" onclick="location.href='cities/colombo.php'">Colombo</button>
+                <button class="ella-btn" onclick="location.href='cities/ella.php'">Ella</button>
+                <button class="hikkaduwa-btn" onclick="location.href='cities/hikkaduwa.php'">Hikkaduwa</button>
+                <button class="kandy-btn" onclick="location.href='cities/kandy.php'">Kandy</button>
+                <button class="sigiriya-btn" onclick="location.href='cities/sigiriya.php'">Sigiriya</button>
+            </div>
+        </div>
+        <div class="middle">
+            <p class="welcome-note">Welcome to SriLanka</p>
+        </div>
+
+        <div class="description">
+            <div class="des-para">
+                <div>
+                    <p>Specializes in providing Tailor-made holidays to Sri Lanka which is made possible due to the partnership 
+                        we hold with a very reputable and most preferred tour operator in the country. 
+                        In addition to being a friendly team of experts, we focus in providing maximum customer satisfaction to our
+                        travelers and guarantee that they are in safe hands throughout their holiday in Sri Lanka.</p>
+                </div>
+                <div>
+                    <p>HURRY UP! Choose your destination today</p>
+                </div> 
+            </div>
+            <div class="des-photo">
+                <img src="images/sl.jpeg">
+            </div>
+        </div>
+            
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000
+                },
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+            });
+        </script>
+    </body>
+</html>

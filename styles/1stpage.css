@@ -1,0 +1,179 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(18, 18, 19);
+    height: 50px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.name{
+    color: aliceblue;
+    font-weight: bold;
+    padding-top: 0;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: solid;
+    border-radius: 20px;
+    border-color: gray;
+    align-items: center;
+    padding-top: 70px;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    border: 1;
+    background-color: none;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 8vm;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+button:hover{
+    color: red;
+    background-color: rgba(250, 173, 186, 0.397);
+}
+
+.pop-up {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: top 0.2s, transform 0.2s;
+}
+
+.pop-up table{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.pop-up1 {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: top 0.2s, transform 0.2s;
+}
+
+.pop-up1 table{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.open-popup1{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.open-popup1 table{
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+}
+
+.info{
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close{
+    margin-left: -8px;
+    width: 70px;
+    height: 30px;
+}
+
+.close-row td{
+    width: 100px;
+}
+
+.fill{
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.submit{
+    width: 70px;
+    height: 30px;
+    border: 1;
+    background-color: none;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 8vm;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+.submit:hover{
+    color: red;
+    background-color: rgba(250, 173, 186, 0.397);
+}
+
+.reset{
+    width: 70px;
+    height: 30px;
+    border: 1;
+    background-color: none;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 8vm;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 255, 0.267);
+}
+

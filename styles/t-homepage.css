@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+    z-index: 2;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+.name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+
+.navigation-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navigation-bar ul li{
+    position: relative;
+    margin-left: 20px;
+}
+
+.navigation-bar ul li:hover .drop-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.drop-menu{
+    display: none;
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    margin-left: 0;
+}
+
+.drop-menu ul{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    width: 150px;
+    padding: 5px 0;
+}
+
+.navigation-bar ul li a:hover{
+    color: red;
+}
+
+.navigation-bar a{
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.navigation-bar i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.toggle-btn{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    justify-content: space-between;
+    width:30px;
+    height: 30px;
+}
+
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+@media (max-width:700px){
+    .toggle-btn{
+        display: flex;
+    }
+
+    .navigation-bar {
+        display: none;
+        width: 100%;
+    }
+
+    .header-bar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation-bar li{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navigation-bar.active{
+        display: flex;
+        z-index: 2;
+        background-color: black;
+    }
+
+    .question-para p{
+        display: none;
+    }
+
+    .button-set button{
+        display: none;
+    }
+
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: black;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: blue;
+}
+
+.question-para{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top:180px;
+    max-width: 50%;
+    left: 40vw;
+}
+
+.question-para p{
+    padding: 0;
+    margin: 0;
+    font-family: Tangerine, Arial;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3vw;
+    color: black;
+}
+
+.button-set{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top:230px;
+    max-width: 80%;
+}
+
+.button-set button{
+    width: 10vw;
+    height: 30px;
+    border: 1;
+    background-color: none;
+    border-color: blue;
+    border-radius: 5px;
+    font-size: 8vm;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+    background-color: rgba(0, 0, 255, 0.267);
+}
+
+.button-set button:hover{
+    background-color: rgba(250, 173, 186, 0.397);
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: none;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+}
+
+.welcome-note{
+    padding: 0;
+    margin: 0;
+    font-family: Tangerine, Arial;
+    font-size: 8vw;
+    color: blue;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(243, 243, 243);
+}
+
+.des-para{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.des-para p{
+    font-family: Roboto,Arial;
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.des-photo{
+    display: flex;
+}
+
+.des-photo img{
+    width: 100%;
+    border-radius: 250px;
+    height: 300px;
+}

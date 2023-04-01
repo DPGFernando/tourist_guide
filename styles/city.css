@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.output-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+}
+
+.touristg-card{
+    width:320px;
+    height: 375px;
+    background-color: rgba(87, 87, 87, 0.39);
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.img-ele{
+    text-align: center;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.t-table tr{
+    width:275px;
+    height: 40px;
+    font-weight: bolder;
+}
